@@ -1,6 +1,7 @@
 //SPDX-License-Identifier:GPL-3.0
 pragma solidity ^0.8.16;
-import "github.com/Prasoon180/superPAD_Project_5_AUG_2022/blob/main/IBEP20";
+// "github.com/Prasoon180/superPAD_Project_5_AUG_2022/blob/main/IBEP20";
+import "github.com/Prasoon180/superPAD_15Aug/blob/main/IBEP20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
  contract IDO is Ownable  {                   // This is main contract ie; IDO.sol
