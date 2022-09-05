@@ -4,7 +4,7 @@ pragma solidity ^0.8.16;
 
 
 interface IBEP20 {
-    
+  
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     event Approval(address indexed owner, address indexed spender, uint256 value);
@@ -18,10 +18,9 @@ interface IBEP20 {
     function allowance(address owner, address spender) external view returns (uint256);
 
     function mint(address to, uint256 amount) external view returns(bool);
-    
 
+    function transferFrom(address from , address to, uint256 amount) external returns (bool);
 
-    
 
     /**
      * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
@@ -38,10 +37,4 @@ interface IBEP20 {
      * Emits an {Approval} event.
      */
     function approve(address spender, uint256 amount) external returns (bool);
-
-    function transferFrom(
-        address from,
-        address to,
-        uint256 amount
-    ) external returns (bool);
 }
